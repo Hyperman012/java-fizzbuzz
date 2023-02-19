@@ -7,6 +7,37 @@ import org.junit.jupiter.params.provider.ValueSource;
 import static org.junit.jupiter.api.Assertions.*;
 
 class MainTest {
+    @Test
+    void calculate1for1( ) {
+        assertEquals("1",Main.calculate(1));
+    }
+
+    @Test
+    void calculate2for2( ) {
+        assertEquals("2",Main.calculate(2));
+    }
+    @Test
+    void calculate3forfizz(){
+        assertEquals("fizz",Main.calculate(3));
+    }
+
+    @Test
+    void calculate6forfizz(){
+        assertEquals("fizz",Main.calculate(6));
+    }
+    @Test
+    void calculate5forbuzz(){
+        assertEquals("buzz",Main.calculate(5));
+    }
+    @Test
+    void calculate10forbuzz() {
+        assertEquals("buzz", Main.calculate(10));
+    }
+    @Test
+    void calculate15forfizzbuzz() {
+        assertEquals("fizzbuzz", Main.calculate(15));
+    }
+
     @ParameterizedTest
     @ValueSource(ints = {1, 2,4,97})
     void Calculate_ReturnsStringForNumbers(int number) {
