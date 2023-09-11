@@ -7,8 +7,8 @@ import static org.junit.jupiter.api.Assertions.*;
 class MainTest {
 
     @Test
-    void main() {
-        assertTrue(true);
+    void calculate_returns1_withInput1( ) {
+        assertEquals("",Main.calculate(1));
     }
 
 }
