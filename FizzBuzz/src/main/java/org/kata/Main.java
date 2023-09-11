@@ -8,5 +8,8 @@ public class Main {
         }
     }
 
+    public static  String calculate(int input) {
+       return "";
+    }
 }
 
