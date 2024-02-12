@@ -9,15 +9,20 @@ public class Main {
     }
 
     public static  String calculate(int input) {
-        if(isMultipleOf(3, input) && isMultipleOf(5, input))
+        if(isMultipleOf(3, input) && isMultipleOfFive(input))
             return "fizzbuzz";
         if(isMultipleOf(3, input))
             return "fizz";
-        if(isMultipleOf(5, input))
+        if(isMultipleOfFive(input))
             return "buzz";
 
         return String.valueOf(input);
     }
+
+    private static boolean isMultipleOfFive(int input) {
+        return isMultipleOf(5, input);
+    }
+
     private static boolean isMultipleOf(int multiple, int value) {
         return value % multiple == 0;
     }
